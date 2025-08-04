@@ -1,32 +1,26 @@
-# Merc
+#  Mercenaries  
+**Курсовой проект | Android Studio | 2023**  
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+Простой, но насыщенный **top-down шутер** для Android, написанный за неделю. Игрок сражается с волнами врагов, используя два вида оружия и спецспособности.  
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+##  Геймплей  
+- **Touch-управление** (движение + стрельба).  
+- **Два вида оружия**:  
+  - Пистолет (быстрая стрельба, слабый урон).  
+  - Винтовка (медленно, но мощно).  
+- **Power-ups**:  
+  -  Здоровье.  
+  -  Патроны.  
+  -  **Rampage**: увеличенная скорость движения и стрельбы.  
+- **Система рангов** по итоговому количеству очков.  
 
-## Platforms
 
-- `core`: Main module with the application logic shared by all platforms.
-- `android`: Android mobile platform. Needs Android SDK.
+##  Технические детали  
+- **Спавн врагов**: волны с нарастающей сложностью.  
+- **Управление**: `Virtual Joystick` для движения + `Touch` для стрельбы.  
+- **Оружие**: переключение через UI-кнопку.  
+- **Rampage**: реализован через `Timer` + флаг `isActive`.  
 
-## Gradle
-
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
-
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `android:lint`: performs Android project validation.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `test`: runs unit tests (if any).
-
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+## Стек технологий  
+- **Язык**: Java.  
+- **Фреймворк**: LibGDX.
