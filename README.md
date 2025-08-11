@@ -1,26 +1,25 @@
-#  Mercenaries  
-**Курсовой проект | Android Studio | 2024**  
+# Mercenaries
+**Course Project | Android Studio | 2024**
 
-Простой, но насыщенный **top-down шутер** для Android, написанный за неделю. Игрок сражается с волнами врагов, используя два вида оружия и спецспособности.  
+A simple but intense **top-down shooter** for Android, written in a week. The player fights waves of enemies using two types of weapons and special abilities.
 
-##  Геймплей  
-- **Touch-управление** (движение + стрельба).  
-- **Два вида оружия**:  
-  - Пистолет (быстрая стрельба, слабый урон).  
-  - Винтовка (медленно, но мощно).  
-- **Power-ups**:  
-  -  Здоровье.  
-  -  Патроны.  
-  -  **Rampage**: увеличенная скорость движения и стрельбы.  
-- **Система рангов** по итоговому количеству очков.  
+## Gameplay
+- **Touch controls** (movement + shooting).
+- **Two types of weapons**:
+- Pistol (fast shooting, low damage).
+- Rifle (slow but powerful).
+- **Power-ups**:
+- Health.
+- Ammo.
+- **Rampage**: increased movement and shooting speed.
+- **Rank system** based on the final number of points.
 
+## Technical details
+- **Enemy spawns**: waves of increasing difficulty.
+- **Controls**: `Virtual Joystick` for movement + `Touch` for shooting.
+- **Weapons**: switching via UI button.
+- **Rampage**: implemented via `Timer` + `isActive` flag.
 
-##  Технические детали  
-- **Спавн врагов**: волны с нарастающей сложностью.  
-- **Управление**: `Virtual Joystick` для движения + `Touch` для стрельбы.  
-- **Оружие**: переключение через UI-кнопку.  
-- **Rampage**: реализован через `Timer` + флаг `isActive`.  
-
-## Стек технологий  
-- **Язык**: Java.  
-- **Фреймворк**: LibGDX.
+## Tech stack
+- **Language**: Java.
+- **Framework**: LibGDX.
